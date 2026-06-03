@@ -20,9 +20,74 @@ import { BlogPost, GalleryItem } from './types';
 import { INITIAL_BLOGS, INITIAL_GALLERY } from './data/seedData';
 import { Plane, AlertTriangle, Cpu, HelpCircle } from 'lucide-react';
 
+const knownTabs = [
+  'services', 
+  'flight-permit', 
+  'adsb-detail', 
+  'flight-plan-detail', 
+  'aeronautical-invoice-detail', 
+  'general-aviation-detail', 
+  'gallery', 
+  'blog', 
+  'booking', 
+  'admin'
+];
+
+const getTabFromURL = (): string => {
+  const pathname = window.location.pathname;
+  const segments = pathname.split('/').filter(Boolean);
+  if (segments.length === 0) return 'home';
+  
+  const lastSegment = segments[segments.length - 1];
+  
+  if (lastSegment === 'bane-website-new-version') return 'home';
+  
+  if (knownTabs.includes(lastSegment)) {
+    return lastSegment;
+  }
+  
+  return 'home';
+};
+
+const getBasePath = (): string => {
+  const pathname = window.location.pathname;
+  if (pathname.includes('/bane-website-new-version')) {
+    return '/bane-website-new-version';
+  }
+  return '';
+};
+
+const updateURL = (tab: string) => {
+  const basePath = getBasePath();
+  const targetPath = tab === 'home' ? (basePath || '/') : `${basePath}/${tab}`;
+  
+  if (window.location.pathname !== targetPath) {
+    window.history.pushState({ tab }, '', targetPath);
+  }
+};
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState<string>('home');
+  const [activeTab, setActiveTabInternal] = useState<string>('home');
   const [targetBookingService, setTargetBookingService] = useState<string>("Aviation Consultancy");
+  
+  // Sync state on load
+  useEffect(() => {
+    setActiveTabInternal(getTabFromURL());
+  }, []);
+
+  const setActiveTab = (tab: string) => {
+    setActiveTabInternal(tab);
+    updateURL(tab);
+  };
+
+  // Popstate navigation synchronization (e.g. Back/Forward)
+  useEffect(() => {
+    const handlePopState = () => {
+      setActiveTabInternal(getTabFromURL());
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
   
   // Dynamic state repositories to enable instant cross-tab propagation when CMS is manipulated
   const [blogsState, setBlogsState] = useState<BlogPost[]>(INITIAL_BLOGS);
