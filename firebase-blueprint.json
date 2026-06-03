@@ -1,0 +1,105 @@
+{
+  "entities": {
+    "blog": {
+      "title": "Blog Post",
+      "description": "Dynamic aviation portal blog post and announcements.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique identifier of the post." },
+        "title": { "type": "string", "description": "Title of the article." },
+        "slug": { "type": "string", "description": "URL-friendly SEO slug for route matching." },
+        "summary": { "type": "string", "description": "Short description of the post content." },
+        "content": { "type": "string", "description": "Full markdown or rich text content." },
+        "author": { "type": "string", "description": "Name of the writer or editor." },
+        "category": { "type": "string", "description": "Industry section, e.g. Technology, Operations, Consultancy." },
+        "image": { "type": "string", "description": "Aviation graphic image as dynamic path or base64." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server last update timestamp." },
+        "views": { "type": "integer", "description": "Number of times this article was viewed." }
+      },
+      "required": ["id", "title", "slug", "summary", "content", "author", "category", "image", "createdAt"]
+    },
+    "booking": {
+      "title": "Client Booking",
+      "description": "User scheduled aviation service request or consultancy demo.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientEmail": { "type": "string", "format": "email" },
+        "clientPhone": { "type": "string" },
+        "service": { "type": "string", "description": "Type of service or consultation requested." },
+        "dateTime": { "type": "string", "format": "date-time", "description": "Selected slot ISO string." },
+        "notes": { "type": "string", "description": "Specific requirements or fleet configuration comments." },
+        "status": { "type": "string", "enum": ["pending", "confirmed", "completed", "cancelled"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "clientName", "clientEmail", "service", "dateTime", "status", "createdAt"]
+    },
+    "inquiry": {
+      "title": "Contact Inquiry",
+      "description": "User feedback and direct sales inquiries from contact form.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["unread", "read", "answered"] },
+        "aiDraft": { "type": "string", "description": "Suggested smart response generated server-side." },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "name", "email", "subject", "message", "status", "createdAt"]
+    },
+    "newsletter": {
+      "title": "Newsletter Subscription",
+      "description": "List of captured emails for newsletters and company product updates.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "status": { "type": "string", "enum": ["subscribed", "unsubscribed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "email", "status", "createdAt"]
+    },
+    "galleryItem": {
+      "title": "Gallery Item",
+      "description": "High-quality custom images showcasing BANE aviation tech.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string", "description": "Airfield, Operations, Cloud, Consultancy." },
+        "image": { "type": "string", "description": "Base64 string or high-resolution graphic path." },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "title", "category", "image" ]
+    }
+  },
+  "firestore": {
+    "blogs": {
+      "schema": { "$ref": "#/entities/blog" },
+      "description": "Aviation articles and industry reports."
+    },
+    "bookings": {
+      "schema": { "$ref": "#/entities/booking" },
+      "description": "Aviation consulting schedules and client bookings."
+    },
+    "inquiries": {
+      "schema": { "$ref": "#/entities/inquiry" },
+      "description": "Active sales inquiries and contact messages."
+    },
+    "newsletters": {
+      "schema": { "$ref": "#/entities/newsletter" },
+      "description": "Email newsletter subscriber list."
+    },
+    "gallery": {
+      "schema": { "$ref": "#/entities/galleryItem" },
+      "description": "High quality curated imagery gallery for flights, services, and cloud telemetry maps."
+    }
+  }
+}

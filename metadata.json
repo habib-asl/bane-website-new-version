@@ -1,0 +1,6 @@
+{
+  "name": "BANE Aero Systems",
+  "description": "Modern aviation technology portal, Aeronautical Revenue Management System (ARMS), live scheduler, and adaptive admin CMS dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

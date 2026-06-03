@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny rule
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'admin@bane.aero' || 
+        request.auth.token.email == 'habib@asl.aero' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // Blogs rules
+    match /blogs/{blogId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Bookings rules
+    match /bookings/{bookingId} {
+      allow read: if isAdmin();
+      allow create: if true; // Client bookings
+      allow update, delete: if isAdmin();
+    }
+
+    // Contact Inquiries rules
+    match /inquiries/{inquiryId} {
+      allow read: if isAdmin();
+      allow create: if true; // Client contact submissions
+      allow update, delete: if isAdmin();
+    }
+
+    // Newsletter signups
+    match /newsletters/{newsletterId} {
+      allow read: if isAdmin();
+      allow create: if true; // Client newsletter subscription
+      allow update, delete: if isAdmin();
+    }
+
+    // Gallery portfolio images
+    match /gallery/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Administrative records
+    match /admins/{adminId} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
