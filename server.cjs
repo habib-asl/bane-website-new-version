@@ -157,7 +157,7 @@ Best Regards,
 
 Customer Operations Team
 BANE Aero Systems
-habib@asl.aero`
+info@bane.aero`
         });
         return;
       }
