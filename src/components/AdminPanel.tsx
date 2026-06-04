@@ -442,8 +442,8 @@ export default function AdminPanel({ onRefreshSeeds, currentBlogs, currentGaller
   };
 
   return (
-    <section id="admin-portal-panel" className="admin-portal-wrapper py-16 sm:py-20 bg-[#fafafc] px-4 sm:px-6 lg:px-8 border-t border-slate-100 min-h-[70vh]">
-      <div className="admin-portal-container max-w-7xl mx-auto space-y-12">
+    <section id="admin-portal-panel" className="admin-portal-wrapper py-16 sm:py-20 bg-[#fafafc] px-4 sm:px-8 xl:px-16 border-t border-slate-100 min-h-[70vh]">
+      <div className="admin-portal-container max-w-[1600px] mx-auto space-y-12">
         
         {/* Unauthenticated Login Form lock screen */}
         {!isLogged ? (

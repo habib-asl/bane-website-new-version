@@ -50,8 +50,8 @@ export default function PortfolioGallery({ gallerySeed }: GalleryProps) {
     : galleryItems.filter(item => item.category.toLowerCase() === selectedCategory.toLowerCase());
 
   return (
-    <section id="portfolio-gallery" className="gallery-section-wrapper py-20 sm:py-24 bg-[#fafafc] px-4 sm:px-6 lg:px-8 border-t border-slate-100">
-      <div className="gallery-section-container max-w-7xl mx-auto space-y-12">
+    <section id="portfolio-gallery" className="gallery-section-wrapper py-20 sm:py-24 bg-[#fafafc] px-4 sm:px-8 xl:px-16 border-t border-slate-100">
+      <div className="gallery-section-container max-w-[1600px] mx-auto space-y-12">
         
         {/* Headings */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-200">

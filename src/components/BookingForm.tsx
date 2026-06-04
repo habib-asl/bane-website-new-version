@@ -99,11 +99,11 @@ export default function BookingForm({ initialService = "Aviation Consultancy", o
   };
 
   return (
-    <section id="consultancy-scheduling" className="booking-section-wrapper py-20 sm:py-24 bg-[#fafafc] px-4 sm:px-6 lg:px-8 relative overflow-hidden border-t border-slate-100">
+    <section id="consultancy-scheduling" className="booking-section-wrapper py-20 sm:py-24 bg-[#fafafc] px-4 sm:px-8 xl:px-16 relative overflow-hidden border-t border-slate-100">
       {/* Background gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/5 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="booking-section-container max-w-5xl mx-auto space-y-12 relative z-10">
+      <div className="booking-section-container max-w-[1600px] mx-auto space-y-12 relative z-10">
         
         {/* Headings */}
         <div className="text-center max-w-3xl mx-auto space-y-4">

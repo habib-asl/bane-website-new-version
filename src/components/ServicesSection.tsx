@@ -133,8 +133,8 @@ export default function ServicesSection({ onSelectService, onReadMore }: Service
   ];
 
   return (
-    <section id="services-suite" className="services-section-wrapper py-20 sm:py-24 bg-white border-t border-slate-150 px-4 sm:px-6 lg:px-8">
-      <div className="services-section-container max-w-7xl mx-auto space-y-16">
+    <section id="services-suite" className="services-section-wrapper py-20 sm:py-24 bg-white border-t border-slate-150 px-4 sm:px-8 xl:px-16">
+      <div className="services-section-container max-w-[1600px] mx-auto space-y-16">
         
         {/* Headings */}
         <div className="text-center max-w-3xl mx-auto space-y-4">

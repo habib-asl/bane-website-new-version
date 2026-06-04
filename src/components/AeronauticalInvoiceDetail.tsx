@@ -114,7 +114,7 @@ export default function AeronauticalInvoiceDetail({ onBack, onBookDemo }: Aerona
     <div id="aeronautical-invoice-detail-page" className="min-h-screen bg-[#fafafc] text-slate-900 font-sans pb-16">
       
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-16 py-12 space-y-12">
         
         {/* Navigation row / return buttons */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

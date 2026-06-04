@@ -78,9 +78,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact-and-outreach" className="contact-section-wrapper py-20 sm:py-24 bg-white px-4 sm:px-6 lg:px-8 border-t border-slate-100 relative">
+    <section id="contact-and-outreach" className="contact-section-wrapper py-20 sm:py-24 bg-white px-4 sm:px-8 xl:px-16 border-t border-slate-100 relative">
       
-      <div className="contact-section-container max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+      <div className="contact-section-container max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
         
         {/* Left Column: Corporate locations, contacts, Newsletter Signup Card */}
         <div className="lg:col-span-5 space-y-8">

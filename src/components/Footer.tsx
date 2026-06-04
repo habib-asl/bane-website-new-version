@@ -74,16 +74,16 @@ export default function Footer({ onNavigate }: FooterProps) {
   return (
     <footer 
       id="aviation-footer-section" 
-      className="aviation-footer-wrapper bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-t border-slate-800/80 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-sans text-slate-300"
+      className="aviation-footer-wrapper bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-t border-slate-800/80 py-16 px-4 sm:px-8 xl:px-16 relative overflow-hidden font-sans text-slate-300"
     >
       {/* Structural Glowing Ambient light */}
       <div className="absolute top-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-[#009FE3]/35 to-transparent pointer-events-none" />
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#009FE3]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="aviation-footer-container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start relative z-10">
+      <div className="aviation-footer-container max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 items-start relative z-10">
         
         {/* Left Column Brand profile */}
-        <div className="md:col-span-4 space-y-6 text-left">
+        <div className="col-span-12 lg:col-span-4 md:col-span-6 space-y-6 text-left">
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => onNavigate('home')}>
             <div className="p-2.5 bg-slate-900/90 rounded-xl border border-slate-800 group-hover:border-[#009FE3]/40 transition-colors duration-300 shadow-md">
               <Plane className="h-5 w-5 text-[#009FE3] rotate-45 group-hover:rotate-[90deg] transition-transform duration-500 ease-out" />
@@ -120,7 +120,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         {/* Middle Column Portal Links - Core Services updated precisely */}
-        <div className="md:col-span-4 col-span-12 text-left space-y-5">
+        <div className="col-span-12 lg:col-span-3 md:col-span-6 text-left space-y-5">
           <div className="flex items-center space-x-2">
             <span className="h-1.5 w-1.5 bg-[#009FE3] rounded-full" />
             <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest font-black">Our Core Services</h4>
@@ -149,7 +149,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         {/* Support & Coordinates Column replaced with high-integrity System Operations Pulse */}
-        <div className="md:col-span-4 col-span-12 text-left space-y-5">
+        <div className="col-span-12 lg:col-span-5 md:col-span-12 text-left space-y-5">
           <div className="flex items-center space-x-2">
             <span className="h-1.5 w-1.5 bg-[#009FE3] rounded-full animate-ping" />
             <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest font-black text-slate-100">Spec Dispatch Portal</h4>
@@ -277,7 +277,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       </div>
 
       {/* Corporate footer line */}
-      <div className="max-w-7xl mx-auto pt-8 mt-12 border-t border-slate-800/60 text-center flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 font-mono gap-4 relative z-10">
+      <div className="max-w-[1600px] mx-auto pt-8 mt-12 border-t border-slate-800/60 text-center flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 font-mono gap-4 relative z-10">
         <p>© {currentYear} BANE Aero Systems. All rights reserved. Dhaka, DAC Terminal.</p>
         <div className="flex items-center space-x-4">
           <a href="#" className="hover:text-slate-350 transition-colors">Privacy Policy</a>

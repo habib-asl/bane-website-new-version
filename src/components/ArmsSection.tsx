@@ -24,14 +24,14 @@ export default function ArmsSection() {
   ];
 
   return (
-    <section id="arms-revenue-system" className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white overflow-hidden px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+    <section id="arms-revenue-system" className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white overflow-hidden px-4 sm:px-8 xl:px-16 border-t border-slate-800">
       
       {/* Decorative cyber grid accent lines */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none opacity-50" />
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-sky-500/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10 space-y-16">
+      <div className="max-w-[1600px] mx-auto relative z-10 space-y-16">
         
         {/* Section Header Text */}
         <div className="max-w-3xl space-y-4">

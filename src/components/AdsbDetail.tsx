@@ -108,7 +108,7 @@ export default function AdsbDetail({ onBack }: AdsbDetailProps) {
   return (
     <div id="adsb-flight-tracking-detail-page" className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-16 py-12 space-y-12">
         
         {/* Navigation & Action Header */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

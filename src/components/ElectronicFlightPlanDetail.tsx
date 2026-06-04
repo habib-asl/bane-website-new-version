@@ -87,7 +87,7 @@ export default function ElectronicFlightPlanDetail({ onBack, onBookDemo }: Elect
       
 
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-16 py-12 space-y-12">
         
         {/* Navigation & Breadcrumbs Row */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

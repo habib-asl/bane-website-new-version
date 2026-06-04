@@ -137,8 +137,8 @@ export default function BlogSection({ blogSeed }: BlogProps) {
   );
 
   return (
-    <section id="blogs-section" className="blogs-section-wrapper py-20 sm:py-24 bg-white border-t border-slate-100 px-4 sm:px-6 lg:px-8">
-      <div className="blogs-section-container max-w-7xl mx-auto">
+    <section id="blogs-section" className="blogs-section-wrapper py-20 sm:py-24 bg-white border-t border-slate-100 px-4 sm:px-8 xl:px-16">
+      <div className="blogs-section-container max-w-[1600px] mx-auto">
         
         {/* Full Expanded Reading mode layout */}
         {activeArticle ? (

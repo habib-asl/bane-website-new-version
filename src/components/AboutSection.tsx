@@ -9,7 +9,11 @@ import {
   HelpCircle,
   CheckCircle2,
   Target,
-  Eye
+  Eye,
+  ShieldCheck,
+  Sparkles,
+  Zap,
+  Compass
 } from 'lucide-react';
 
 export default function AboutSection() {
@@ -54,8 +58,8 @@ export default function AboutSection() {
   return (
     <>
       {/* Key Features Bento Grid */}
-      <section id="about-section" className="about-section-wrapper py-20 sm:py-24 bg-[#fafafc] border-t border-slate-100 px-4 sm:px-6 lg:px-8">
-        <div className="about-section-container max-w-7xl mx-auto space-y-16">
+      <section id="about-section" className="about-section-wrapper py-20 sm:py-24 bg-[#fafafc] border-t border-slate-100 px-4 sm:px-8 xl:px-16">
+        <div className="about-section-container max-w-[1600px] mx-auto space-y-16">
           
           {/* Headings */}
           <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -98,11 +102,11 @@ export default function AboutSection() {
       </section>
 
       {/* About BANE Company Details Section */}
-      <section id="about-bane-company-narrative" className="py-24 bg-white border-t border-b border-slate-200/60 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section id="about-bane-company-narrative" className="py-24 bg-white border-t border-b border-slate-200/60 px-4 sm:px-8 xl:px-16 relative overflow-hidden">
         {/* Subtle decorative grid background */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,159,227,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,159,227,0.01)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-[1600px] mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             {/* Left Column: Polished Visual Feature Block */}
@@ -182,13 +186,13 @@ export default function AboutSection() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section id="bane-mission-vision" className="py-20 sm:py-24 bg-[#fafafc] border-b border-slate-200/60 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section id="bane-mission-vision" className="py-20 sm:py-24 bg-[#fafafc] border-b border-slate-200/60 px-4 sm:px-8 xl:px-16 relative overflow-hidden">
         {/* Subtle decorative target background */}
         <div className="absolute right-0 bottom-0 pointer-events-none opacity-[0.02] transform translate-x-12 translate-y-12">
           <Target className="h-96 w-96 text-[#009FE3]" />
         </div>
 
-        <div className="max-w-7xl mx-auto space-y-12 relative z-10">
+        <div className="max-w-[1600px] mx-auto space-y-12 relative z-10">
           
           <div className="text-center max-w-3xl mx-auto space-y-4 animate-fade-in">
 
