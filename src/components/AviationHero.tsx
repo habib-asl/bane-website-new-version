@@ -69,7 +69,7 @@ export default function AviationHero({ onExploreServices, onBookDemo }: HeroProp
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-[15px] xl:text-[16px] text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed font-sans">
-              Billing for Air Navigation Enterprise (BANE) integrates real-time ADS-B telemetry, secure automated flight permit tracking, and custom financial invoice calculations in one state-of-the-art sovereign cloud-native dashboard.
+              Billing for Air Navigation Enterprise (BANE) is a modular aviation platform supporting Air Traffic Management (ATM) reporting, operations, and financial efficiency through integrated software systems.
             </p>
           </div>
 
