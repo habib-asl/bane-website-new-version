@@ -125,7 +125,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <span className="h-1.5 w-1.5 bg-[#009FE3] rounded-full" />
             <h4 className="text-xs font-mono text-slate-400 uppercase tracking-widest font-black">Our Core Services</h4>
           </div>
-          <ul className="space-y-3.5 text-xs font-mono">
+          <ul className="grid grid-cols-1 gap-1 text-xs font-mono">
             {[
               { label: 'ADS-B Flight Tracking', tab: 'adsb-detail' },
               { label: 'Automated Flight Permit System', tab: 'flight-permit' },
@@ -135,13 +135,16 @@ export default function Footer({ onNavigate }: FooterProps) {
               { label: 'Cloud Services & IT Support', tab: 'services' },
               { label: 'Aviation Consultancy', tab: 'booking' }
             ].map((link, idx) => (
-              <li key={idx}>
+              <li key={idx} className="border-b border-slate-900/50 last:border-b-0 py-1.5 first:pt-0 last:pb-0">
                 <button 
                   onClick={() => onNavigate(link.tab)} 
-                  className="group flex items-center text-slate-400 hover:text-[#009FE3] transition-colors duration-200 hover:cursor-pointer text-left"
+                  className="group flex items-center justify-between w-full text-slate-400 hover:text-white transition-all duration-300 hover:cursor-pointer text-left py-1.5 px-3.5 rounded-xl hover:bg-slate-900/50 hover:shadow-sm"
                 >
-                  <ArrowRight className="h-3 w-3 mr-2 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 text-[#009FE3] transition-all duration-200" />
-                  <span className="transform group-hover:translate-x-1 transition-transform duration-200">{link.label}</span>
+                  <div className="flex items-center space-x-3 overflow-hidden">
+                    <span className="text-[10px] font-bold text-[#009FE3]/70 font-mono select-none">0{idx + 1}</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform duration-300 text-slate-350 group-hover:text-white font-sans text-xs font-medium truncate">{link.label}</span>
+                  </div>
+                  <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 text-[#009FE3] transition-all duration-305 shrink-0" />
                 </button>
               </li>
             ))}
