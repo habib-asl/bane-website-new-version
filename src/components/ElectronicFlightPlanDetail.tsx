@@ -85,27 +85,7 @@ export default function ElectronicFlightPlanDetail({ onBack, onBookDemo }: Elect
   return (
     <div id="electronic-flight-plan-detail-page" className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       
-      {/* Simulated URL Path indicator for precise web-route fidelity */}
-      <div className="bg-slate-100 border-b border-slate-200 px-4 py-2.5 sm:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-2 w-full max-w-xl">
-            <div className="flex space-x-1.5 shrink-0">
-              <span className="w-3.5 h-3.5 rounded-full bg-slate-300 inline-block" />
-              <span className="w-3.5 h-3.5 rounded-full bg-slate-300 inline-block" />
-              <span className="w-3.5 h-3.5 rounded-full bg-slate-300 inline-block" />
-            </div>
-            <div className="flex-1 bg-white border border-slate-200/80 px-4 py-1.5 rounded-lg text-xs font-mono text-slate-500 overflow-hidden text-ellipsis whitespace-nowrap shadow-inner flex items-center space-x-1">
-              <span className="text-slate-400">https://</span>
-              <span className="text-slate-800 font-semibold">bane.aviation</span>
-              <span className="text-purple-600 font-bold">/electronic-flight-plan-system</span>
-            </div>
-          </div>
-          <div className="hidden lg:flex items-center space-x-3 text-xs font-mono text-slate-400">
-            <span className="h-1.5 w-1.5 bg-purple-500 rounded-full animate-ping" />
-            <span>Digital Signature Verified</span>
-          </div>
-        </div>
-      </div>
+
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         
@@ -119,10 +99,7 @@ export default function ElectronicFlightPlanDetail({ onBack, onBookDemo }: Elect
             <span>Back to core services</span>
           </button>
           
-          <div className="inline-flex items-center space-x-2 bg-purple-50 border border-purple-150 text-purple-700 px-4 py-2 rounded-2xl text-xs font-mono font-bold tracking-wider uppercase">
-            <span className="h-2 w-2 rounded-full bg-purple-500 animate-pulse" />
-            <span>Flight Operations Terminal</span>
-          </div>
+
         </div>
 
         {/* Hero Section Container */}

@@ -56,20 +56,7 @@ export default function AviationHero({ onExploreServices, onBookDemo }: HeroProp
         {/* LEFT COLUMN: Premium Typography and Content Container */}
         <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
           
-          {/* Light-theme state pill */}
-          <div className="inline-flex items-center gap-2.5 p-1.5 pr-4 bg-white border border-slate-200/85 rounded-full shadow-md smooth-transition group/badge hover:-translate-y-0.5 max-w-max mx-auto lg:mx-0 text-left">
-            <span className="flex items-center gap-1.5 px-3 py-1 bg-[#009FE3]/10 border border-[#009FE3]/20 text-[#009FE3] rounded-full text-[9.5px] font-mono font-black tracking-widest uppercase shadow-inner">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#009FE3] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#009FE3]"></span>
-              </span>
-              ACTIVE BROADCAST
-            </span>
-            <span className="text-[10px] font-bold text-slate-700 tracking-wider uppercase font-mono flex items-center gap-1.5">
-              <span>Sovereign Ground Station</span>
-              <span className="text-[#009FE3] font-extrabold group-hover/badge:translate-x-1 transition-transform">→</span>
-            </span>
-          </div>
+
 
           {/* Majestic Header Block with beautiful gradients resembling the screenshot */}
           <div className="space-y-4">

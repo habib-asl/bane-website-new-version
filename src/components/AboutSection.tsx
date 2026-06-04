@@ -59,10 +59,7 @@ export default function AboutSection() {
           
           {/* Headings */}
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center space-x-2 text-sky-600">
-              <span className="text-md">✈️</span>
-              <h2 className="text-xs font-mono tracking-widest uppercase font-bold text-sky-600">Overview Features</h2>
-            </div>
+
             <p className="text-3.5xl sm:text-4xl font-extrabold font-display tracking-tight text-slate-900">
               Key Features
             </p>
@@ -114,10 +111,7 @@ export default function AboutSection() {
                 <div className="absolute -right-16 -bottom-16 w-64 h-64 bg-[#009FE3]/10 rounded-full blur-3xl group-hover:bg-[#009FE3]/15 transition-all duration-500" />
                 
                 <div className="space-y-6">
-                  <div className="inline-flex items-center space-x-2 bg-white/10 border border-white/10 px-3.5 py-1.5 rounded-xl text-[10px] font-mono tracking-widest text-[#009FE3] font-bold uppercase">
-                    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>Global Competence</span>
-                  </div>
+
                   
                   <h3 className="text-2xl sm:text-3xl font-black font-display tracking-tight text-white leading-tight">
                     Operational & Aeronautical Success
@@ -150,10 +144,7 @@ export default function AboutSection() {
             {/* Right Column: Structured Narrative Paragraphs from User */}
             <div className="lg:col-span-7 space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center space-x-2 text-[#009FE3]">
-                  <span className="text-lg">🏢</span>
-                  <h2 className="text-xs font-mono tracking-widest uppercase font-black text-[#009FE3]">ABOUT OUR COMPANY</h2>
-                </div>
+
                 <h3 className="text-4xl sm:text-5xl font-black font-display tracking-tight text-slate-900 leading-tight">
                   About BANE
                 </h3>
@@ -200,10 +191,7 @@ export default function AboutSection() {
         <div className="max-w-7xl mx-auto space-y-12 relative z-10">
           
           <div className="text-center max-w-3xl mx-auto space-y-4 animate-fade-in">
-            <div className="inline-flex items-center space-x-2 text-[#009FE3]">
-              <span className="text-md">🚀</span>
-              <h2 className="text-xs font-mono tracking-widest uppercase font-black text-[#009FE3]">PURPOSE & OUTLOOK</h2>
-            </div>
+
             <p className="text-3.5xl sm:text-4xl font-extrabold font-display tracking-tight text-slate-900">
               Our Strategic Framework
             </p>

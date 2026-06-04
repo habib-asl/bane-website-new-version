@@ -35,13 +35,10 @@ export default function ArmsSection() {
         
         {/* Section Header Text */}
         <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-xl text-[10px] font-mono tracking-widest text-[#009FE3] font-bold uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#009FE3] animate-pulse" />
-            <span>Operational Finance Suite</span>
-          </div>
+
           <h2 className="text-3xl sm:text-5xl font-black font-display tracking-tight leading-none text-white">
             Aeronautical Revenue <br className="hidden sm:inline" />
-            <span className="text-[#009FE3] bg-clip-text text-transparent bg-gradient-to-r from-[#009FE3] to-sky-450">Management System (ARMS)</span>
+            <span className="text-[#009FE3]">Management System (ARMS)</span>
           </h2>
           <div className="h-1 w-16 bg-[#009FE3] rounded-full" />
           <p className="text-slate-300 font-medium text-base sm:text-lg leading-relaxed max-w-2xl">

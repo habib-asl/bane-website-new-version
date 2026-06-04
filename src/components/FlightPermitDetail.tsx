@@ -52,11 +52,7 @@ export default function FlightPermitDetail({ onBack, onBookDemo }: FlightPermitD
             <span>Back to services</span>
           </button>
 
-          <div className="space-y-4 max-w-4xl">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 bg-sky-500/10 border border-sky-400/20 rounded-full text-xs font-mono font-bold uppercase text-sky-400 tracking-wider">
-              <span className="p-1 bg-sky-500 rounded-full animate-pulse mr-1"></span>
-              BANGLADESH AIRSPACE COMPLIANT
-            </div>
+          <div className="space-y-4 max-w-4xl font-sans">
             
             <h1 className="text-3xl sm:text-5xl font-black font-display tracking-tight text-white leading-tight">
               Automated Flight Permit System

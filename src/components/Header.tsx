@@ -126,7 +126,8 @@ export default function Header({ activeTab, setActiveTab, isAdminLoggedIn, onLog
               <span>info@bane.aero</span>
             </a>
 
-            {/* Discrete portal administrative endpoints */}
+            {/* Preserving Staff Login/Staff Console container for easy recovery when requested by user */}
+            {/* 
             <div className="hidden md:flex items-center space-x-2.5 border-l border-slate-200 pl-6">
               {isAdminLoggedIn ? (
                 <div className="flex items-center space-x-2">
@@ -159,6 +160,7 @@ export default function Header({ activeTab, setActiveTab, isAdminLoggedIn, onLog
                 </button>
               )}
             </div>
+            */}
 
             {/* Hamburger for tiny screen layouts */}
             <button

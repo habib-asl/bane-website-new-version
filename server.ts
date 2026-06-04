@@ -141,7 +141,7 @@ Format your output strictly as a JSON object containing five fields:
       if (!ai) {
         // Fallback pre-composed responsive text if API key is not configured
         res.json({
-          draft: `Dear ${name || "Aviation Colleague"},\n\nThank you for reaching out to BANE Aero regarding your inquiry: "${subject || "Aviation Services Information"}".\n\nWe appreciate your interest in our industry-standard Aeronautical Revenue Management System (ARMS), flight tracking cloud solutions, and consultant services. \n\nOne of our senior aviation solution architects is reviewing your requirements and will reach out to schedule a live video demonstration or phone briefing shortly. In the meantime, feel free to inspect our technical documentations or review our case studies on bane.aero.\n\nBest Regards,\n\nCustomer Operations Team\nBANE Aero Systems\nhabib@asl.aero`
+          draft: `Dear ${name || "Aviation Colleague"},\n\nThank you for reaching out to BANE Aero regarding your inquiry: "${subject || "Aviation Services Information"}".\n\nWe appreciate your interest in our industry-standard Aeronautical Revenue Management System (ARMS), flight tracking cloud solutions, and consultant services. \n\nOne of our senior aviation solution architects is reviewing your requirements and will reach out to schedule a live video demonstration or phone briefing shortly. In the meantime, feel free to inspect our technical documentations or review our case studies on bane.aero.\n\nBest Regards,\n\nCustomer Operations Team\nBANE Aero Systems\ninfo@bane.aero`
         });
         return;
       }

@@ -85,7 +85,7 @@ export default function ContactSection() {
         {/* Left Column: Corporate locations, contacts, Newsletter Signup Card */}
         <div className="lg:col-span-5 space-y-8">
           <div className="space-y-4">
-            <h2 className="text-xs font-mono tracking-widest text-sky-600 uppercase font-bold">Connect with us</h2>
+
             <p className="text-3xl sm:text-4xl font-extrabold font-display tracking-tight text-slate-900">BANE Aero Headquarters</p>
             <div className="h-0.5 w-12 bg-sky-600 rounded-full" />
             <p className="text-slate-600 text-sm leading-relaxed font-normal">
@@ -101,7 +101,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-slate-500 font-mono text-[9px] uppercase font-bold">General Enquiries</p>
-                <a href="mailto:habib@asl.aero" className="text-slate-800 hover:text-sky-600 font-medium">habib@asl.aero</a>
+                <a href="mailto:info@bane.aero" className="text-slate-800 hover:text-sky-600 font-medium">info@bane.aero</a>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-slate-500 font-mono text-[9px] uppercase font-bold">Aviation Operations Support</p>
-                <p className="text-slate-800 font-semibold">+1 (800) BANE-AERO</p>
+                <p className="text-slate-800 font-semibold">+880 255 098 286/7</p>
               </div>
             </div>
 
@@ -121,7 +121,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-slate-500 font-mono text-[9px] uppercase font-bold">Operational Terminal Hubs</p>
-                <p className="text-slate-650 font-normal">Dacca (DAC) Office & Singapore Airfield Support Hub</p>
+                <p className="text-slate-650 font-semibold text-slate-800">Singapore Airfield Support Hub</p>
               </div>
             </div>
           </div>

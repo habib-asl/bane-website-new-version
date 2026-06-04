@@ -138,12 +138,9 @@ export default function ServicesSection({ onSelectService, onReadMore }: Service
         
         {/* Headings */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center space-x-2 text-indigo-600 bg-indigo-50 border border-indigo-150 py-1.5 px-3 rounded-full">
-            <span className="text-sm">📊</span>
-            <h2 className="text-xs font-mono tracking-widest uppercase font-bold text-indigo-600">Core Services</h2>
-          </div>
+
           <p className="text-3.5xl sm:text-4xl font-extrabold font-display tracking-tight text-slate-900">
-            Modular Aviation Platform Solutions
+            Creative Solutions
           </p>
           <div className="h-0.5 w-12 bg-indigo-500 mx-auto rounded-full" />
           <p className="text-slate-600 font-normal text-sm sm:text-base leading-relaxed">
@@ -158,12 +155,6 @@ export default function ServicesSection({ onSelectService, onReadMore }: Service
               key={idx}
               className={`bg-white border ${item.borderColor} bg-gradient-to-br ${item.color} p-6 sm:p-8 rounded-3xl flex flex-col justify-between hover:scale-[1.015] hover:border-sky-350 hover:shadow-xl shadow-slate-100 smooth-transition relative group`}
             >
-              {/* Badge upper corner with integrated emoji */}
-              <span className="absolute top-6 right-6 text-[9.5px] font-mono tracking-wider text-slate-700 py-1 px-2.5 bg-slate-50 rounded-md border border-slate-200 uppercase font-bold flex items-center gap-1.5">
-                <span>{item.emoji}</span>
-                <span>{item.badge}</span>
-              </span>
-
               <div className="space-y-5">
                 <div className="p-3 bg-slate-50 border border-slate-100 rounded-xl inline-block shadow-sm group-hover:bg-sky-50 smooth-transition">
                   {item.icon}
@@ -191,15 +182,17 @@ export default function ServicesSection({ onSelectService, onReadMore }: Service
               </div>
 
               {/* Action trigger buttons */}
-              <div className="pt-6 mt-6 border-t border-slate-100">
-                <button
-                  onClick={() => onReadMore?.(item.title)}
-                  className="w-full flex items-center justify-between px-4 py-2.5 bg-slate-50 hover:bg-sky-600 hover:text-white border border-slate-200 text-xs font-bold text-slate-700 rounded-lg smooth-transition cursor-pointer group/btn"
-                >
-                  <span>Read more</span>
-                  <ChevronRight className="h-3.5 w-3.5 transform group-hover/btn:translate-x-1 transition-transform shrink-0" />
-                </button>
-              </div>
+              {idx < 5 && (
+                <div className="pt-6 mt-6 border-t border-slate-100">
+                  <button
+                    onClick={() => onReadMore?.(item.title)}
+                    className="w-full flex items-center justify-between px-4 py-2.5 bg-slate-50 hover:bg-sky-600 hover:text-white border border-slate-200 text-xs font-bold text-slate-700 rounded-lg smooth-transition cursor-pointer group/btn"
+                  >
+                    <span>Read more</span>
+                    <ChevronRight className="h-3.5 w-3.5 transform group-hover/btn:translate-x-1 transition-transform shrink-0" />
+                  </button>
+                </div>
+              )}
             </div>
           ))}
         </div>
