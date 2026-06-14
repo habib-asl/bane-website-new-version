@@ -176,8 +176,8 @@ export default function Header({ activeTab, setActiveTab, isAdminLoggedIn, onLog
       </div>
 
       {/* BOTTOM ROW: Deep Sky Blue Full-Width Dynamic Navigation Bar */}
-      <div className="w-full bg-[#009FE3] text-white shadow-md">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-16 flex items-center justify-between">
+      <div className="w-full bg-[#009FE3] text-white shadow-md px-4 sm:px-8 xl:px-16">
+        <div className="max-w-[1600px] mx-auto flex items-center justify-between">
           <nav className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => {
               const isActive = localActiveTab === item.id;
@@ -203,15 +203,15 @@ export default function Header({ activeTab, setActiveTab, isAdminLoggedIn, onLog
 
           {/* Dynamic real-time aviation clocks */}
           <div className="hidden md:block">
-            <div className="flex items-center space-x-3.5 text-xs font-mono text-white/95">
-              <div className="flex items-center space-x-1.5 bg-white/10 px-3 py-1 rounded-lg border border-white/10 hover:border-white/20 transition-all">
+            <div className="flex items-center space-x-3 font-mono text-white/95">
+              <div id="header-utc-clock" className="flex items-center space-x-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/12 hover:border-white/25 transition-all shadow-sm">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-                <span className="opacity-70 font-semibold uppercase tracking-wider text-[10px]">UTC:</span>
-                <span className="font-extrabold text-[11px] tracking-wide text-white">{formatUTC(time)}</span>
+                <span className="opacity-80 font-bold uppercase tracking-wider text-[11px]">UTC:</span>
+                <span className="font-extrabold text-[#f1f5f9] text-xs sm:text-sm tracking-wider">{formatUTC(time)}</span>
               </div>
-              <div className="flex items-center space-x-1.5 bg-white/10 px-3 py-1 rounded-lg border border-white/10 hover:border-white/20 transition-all">
-                <span className="opacity-70 font-semibold uppercase tracking-wider text-[10px]">DAC:</span>
-                <span className="font-extrabold text-[11px] tracking-wide text-white">{formatDhaka(time)}</span>
+              <div id="header-dhaka-clock" className="flex items-center space-x-2 bg-white/10 px-3.5 py-1.5 rounded-lg border border-white/12 hover:border-white/25 transition-all shadow-sm">
+                <span className="opacity-80 font-bold uppercase tracking-wider text-[11px]">DAC:</span>
+                <span className="font-extrabold text-[#f1f5f9] text-xs sm:text-sm tracking-wider">{formatDhaka(time)}</span>
               </div>
             </div>
           </div>

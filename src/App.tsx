@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import AviationHero from './components/AviationHero';
-import AboutSection from './components/AboutSection';
+import AboutSection, { AboutKeyFeatures, AboutMissionVision, AboutNarrative } from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import PortfolioGallery from './components/PortfolioGallery';
 import BlogSection from './components/BlogSection';
@@ -168,14 +168,20 @@ export default function App() {
               onBookDemo={() => handleSelectServiceForBooking("General Consultancy Call")} 
             />
 
-            {/* 2. ABOUT BANE & OPERATIONAL PILLARS */}
-            <AboutSection />
+            {/* 2.1 KEY FEATURES */}
+            <AboutKeyFeatures />
+
+            {/* 3.5 REVENUE MANAGEMENT SUITE (ARMS) */}
+            <ArmsSection />
 
             {/* 3. QUICK SERVICES PREVIEW BENTO SPLITS */}
             <ServicesSection onSelectService={handleSelectServiceForBooking} onReadMore={handleReadMoreService} />
 
-            {/* 3.5 REVENUE MANAGEMENT SUITE (ARMS) */}
-            <ArmsSection />
+            {/* 2.2 STRATEGIC FRAMEWORK (MISSION & VISION) */}
+            <AboutMissionVision />
+
+            {/* 2.3 ABOUT BANE & OPERATIONAL PILLARS (Now placed under Mission & Vision) */}
+            <AboutNarrative />
 
             {/* 4. SEED OUTREACH & CONTACT FORM BLOCK */}
             <ContactSection />

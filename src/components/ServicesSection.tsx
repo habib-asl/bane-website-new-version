@@ -197,22 +197,7 @@ export default function ServicesSection({ onSelectService, onReadMore }: Service
           ))}
         </div>
 
-        {/* Quick Help block bottom */}
-        <div className="bg-gradient-to-r from-indigo-50 via-sky-50/50 to-transparent border border-sky-100 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="space-y-1 text-center sm:text-left">
-            <h4 className="text-sm font-bold font-display text-slate-900">Need a customized integration framework proposal?</h4>
-            <p className="text-xs text-slate-600 leading-relaxed">Our aviation consultants can compile a structural audit outlining your terminal’s revenue optimization steps.</p>
-          </div>
-          <button
-            onClick={() => {
-              const el = document.getElementById('contact-and-outreach');
-              if (el) { el.scrollIntoView({ behavior: 'smooth' }); }
-            }}
-            className="px-6 py-3 bg-gradient-to-r from-sky-600 to-indigo-600 hover:opacity-95 text-white font-bold rounded-xl text-xs sm:text-sm uppercase tracking-wider smooth-transition cursor-pointer shrink-0 shadow-lg shadow-sky-600/10"
-          >
-            Request Systems Audit
-          </button>
-        </div>
+        {/* Quick Help block bottom removed as requested */}
 
       </div>
     </section>

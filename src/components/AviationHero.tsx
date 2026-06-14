@@ -4,7 +4,7 @@ import {
   Compass
 } from 'lucide-react';
 // @ts-ignore
-import heroImage from '../assets/images/aviation_hero_diagram_new_1780392458488.png';
+import heroImage from '../assets/images/ANSP.png';
 
 interface HeroProps {
   onExploreServices: () => void;
@@ -76,17 +76,8 @@ export default function AviationHero({ onExploreServices, onBookDemo }: HeroProp
           {/* CTA Links with premium button spacing and layout */}
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <button
-              id="hero-explore-services-btn"
-              onClick={onExploreServices}
-              className="group flex items-center justify-center space-x-3 w-full sm:w-auto px-8 py-4 bg-[#009FE3] hover:bg-[#0089c4] text-white font-black rounded-xl shadow-md hover:shadow-lg hover:scale-[1.01] transform transition-all duration-200 cursor-pointer text-xs uppercase tracking-wider border border-[#009FE3]"
-            >
-              <span>Explore Services Suite</span>
-              <ChevronRight className="h-4 w-4 transform group-hover:translate-x-1.5 transition-transform" />
-            </button>
-
-            <button
               onClick={onBookDemo}
-              className="flex items-center justify-center space-x-2 w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 border border-slate-200/80 rounded-xl font-bold text-xs uppercase tracking-wider smooth-transition cursor-pointer shadow-sm hover:shadow"
+              className="flex items-center justify-center space-x-2 w-full sm:w-auto px-8 py-4 bg-[#009FE3] hover:bg-[#0089c4] text-white border border-[#009FE3] rounded-xl font-bold text-xs uppercase tracking-wider smooth-transition cursor-pointer shadow-md hover:shadow-lg hover:scale-[1.01]"
             >
               <span>Request Portal Demo</span>
             </button>
