@@ -95,39 +95,12 @@ export default function AviationHero({ onExploreServices, onBookDemo }: HeroProp
             
             {/* Styled card container with pristine border and modern soft shadow */}
             <div className="relative z-10 w-full overflow-hidden rounded-2xl border-2 border-slate-200 bg-white p-3 sm:p-5 shadow-2xl shadow-slate-350/50">
-              
-              {/* Radar Live Location pings to overlay on top of the map image nodes */}
-              <div className="absolute left-[35%] top-[25%] z-20 pointer-events-none shrink-0">
-                <span className="absolute inline-flex h-6 w-6 rounded-full bg-[#009FE3]/40 animate-locator-pulse -left-2 -top-2" />
-                <span className="relative block h-2 w-2 rounded-full bg-[#009FE3] shadow-[0_0_6px_#009FE3]" />
-              </div>
-
-              <div className="absolute left-[68%] top-[55%] z-20 pointer-events-none shrink-0" style={{ animationDelay: '1.2s' }}>
-                <span className="absolute inline-flex h-6 w-6 rounded-full bg-[#009FE3]/40 animate-locator-pulse -left-2 -top-2" />
-                <span className="relative block h-2 w-2 rounded-full bg-[#009FE3] shadow-[0_0_6px_#009FE3]" />
-              </div>
-
               <img 
                 src={heroImage} 
                 alt="BANE Aviation System Diagram (Radar, IT Support, Billing & Ledger Systems)" 
                 className="w-full h-auto object-contain rounded-xl relative z-10 select-none pointer-events-none"
                 referrerPolicy="no-referrer"
               />
-            </div>
-            
-            {/* Floating label overlay at bottom left */}
-            <div className="absolute -bottom-2 sm:bottom-4 left-2 sm:left-4 z-20 bg-white/90 backdrop-blur-xs border border-slate-200/80 text-[10px] font-mono text-slate-600 rounded-xl px-4 py-2 shadow-xs pointer-events-none max-w-[280px] text-left">
-              <span className="font-extrabold text-slate-800 uppercase block tracking-wider text-[8px] mb-0.5">OPERATIONAL ARCHITECTURE</span>
-              Aviation Enterprise Billing & Ledger Workspace
-            </div>
- 
-            {/* Accent sovereign FIR secure badge anchor on the top right */}
-            <div className="absolute -top-2 sm:top-4 right-2 sm:right-4 z-20 bg-white/95 backdrop-blur-xs border border-slate-200/80 rounded-xl px-3 py-1.5 shadow-xs flex items-center space-x-2 pointer-events-none hover:scale-105 smooth-transition">
-              <Compass className="h-4 w-4 text-[#009FE3] animate-spin-slow" style={{ animationDuration: '40s' }} />
-              <div className="text-left">
-                <p className="text-[7px] font-mono text-slate-400 tracking-wider uppercase font-black">SOVEREIGNTY</p>
-                <p className="text-[9px] font-mono font-black text-slate-800 uppercase">ICAO DHAKA FIR</p>
-              </div>
             </div>
 
           </div>
