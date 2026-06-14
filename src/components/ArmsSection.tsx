@@ -103,7 +103,7 @@ export default function ArmsSection() {
               <div className="absolute w-44 h-44 bg-[#009FE3]/10 rounded-full blur-2xl pointer-events-none group-hover:bg-[#009FE3]/20 transition-all duration-300" />
               
               <img 
-                src="/src/assets/images/ARMS-Umbrella.png" 
+                src="https://bane.aero/wp-content/uploads/2025/05/ARMS-Umbrella-v2.png" 
                 alt="Aeronautical Revenue Management System ARMS Umbrella Architecture"
                 className="relative z-10 w-full h-auto object-contain max-h-[380px] rounded-2xl smooth-transition transform group-hover:scale-[1.03] duration-350"
                 referrerPolicy="no-referrer"
